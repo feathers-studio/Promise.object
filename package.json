@@ -1,15 +1,23 @@
 {
-  "name": "@codefeathers/promise.object",
-  "version": "0.0.1",
-  "description": "Deep resolving promises in objects.",
-  "main": "es6/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Muthu Kumar <@MKRhere> (https://mkr.pw)",
-  "contributors": [
-    "Thomas Rory Gummerson <@TRGWII> (https://rory.no)"
-  ],
-  "license": "MIT"
+	"name": "@codefeathers/promise.object",
+	"version": "0.0.2",
+	"description": "Deep resolve promises in objects.",
+	"main": "es6/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Muthu Kumar <@MKRhere> (https://mkr.pw)",
+	"contributors": [
+		"Thomas Rory Gummerson <@TRGWII> (https://rory.no)"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/codefeathers/Promise.object.git"
+	},
+	"bugs": {
+		"url": "https://github.com/codefeathers/Promise.object/issues"
+	},
+	"homepage": "https://github.com/codefeathers/Promise.object#readme",
+	"license": "MIT"
 }
