@@ -1,0 +1,15 @@
+{
+  "name": "@codefeathers/promise.object",
+  "version": "0.0.1",
+  "description": "Deep resolving promises in objects.",
+  "main": "es6/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Muthu Kumar <@MKRhere> (https://mkr.pw)",
+  "contributors": [
+    "Thomas Rory Gummerson <@TRGWII> (https://rory.no)"
+  ],
+  "license": "MIT"
+}
