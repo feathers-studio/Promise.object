@@ -1,12 +1,17 @@
 {
 	"name": "@codefeathers/promise.object",
-	"version": "0.9.0",
+	"version": "0.9.1",
 	"description": "Deep resolve promises in objects.",
 	"main": "es6/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"keywords": [],
+	"keywords": [
+		"Promise",
+		"A+",
+		"objects",
+		"deep resolve"
+	],
 	"author": "Muthu Kumar <@MKRhere> (https://mkr.pw)",
 	"contributors": [
 		"Thomas Rory Gummerson <@TRGWII> (https://rory.no)"
