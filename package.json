@@ -4,7 +4,7 @@
 	"description": "Deep resolve promises in objects.",
 	"main": "es6/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "jasmine"
 	},
 	"keywords": [
 		"Promise",
