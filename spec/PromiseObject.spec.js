@@ -1,6 +1,6 @@
 'use strict';
 
-Promise.object = require('../es6');
+Promise.object = require('../es5/index.min.js');
 
 // Simple object
 const testObject1 = {
