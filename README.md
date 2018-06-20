@@ -48,3 +48,7 @@ Promise.object(
 
 //-> { foo: { bar: 5 } } 
 ```
+
+## Credits
+
+The original idea and challenge was all [@TRGWII](https://github.com/TRGWII).
