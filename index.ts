@@ -42,3 +42,5 @@ export async function promiseObject<T>(obj: T): Promise<ResolveObject<T>> {
 
 	return resolver(obj);
 }
+
+export default promiseObject;
