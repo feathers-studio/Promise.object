@@ -43,6 +43,6 @@ Deno.test("Should resolve cyclic objects", async () => {
 	assertEquals(await promiseObject(nested.test), nested.resolved);
 });
 
-Deno.test("Should resolve deeply cyclic objects", async () => {
+Deno.test("Should resolve deeply cyclic promises", async () => {
 	assertEquals(await promiseObject(deeplyNested.test), deeplyNested.resolved);
 });
