@@ -1,6 +1,6 @@
 # 📤 Promise.object
 
-A Promise.object implementation that deep traverses objects and resolves any Promises.
+`Promise.object` is `Promise.all` for objects, and it traverses deeply! It's also fully typed.
 
 ## Installation
 
@@ -10,25 +10,18 @@ npm install --save @codefeathers/promise.object
 
 ## Usage
 
-```JavaScript
-Promise.object(<Object>).then(...)
-```
+```TS
+import { promiseObject } from "@codefeathers/promise.object";
 
-> Note that importing this library does not pollute the Promise namespace. You should assign it to `Promise.object` yourself (or whatever you please). It does not interfere with native Promises, or your own Promises A+ compatible library such as Bluebird. It however uses Promises, so if you need to polyfill this is your chance.
-
-## Example
-
-```JavaScript
-Promise.object = require('@codefeathers/promise.object');
-const { log } = console;
-
-Promise.object({
+// --
+const resolved = await Promise.object({
 	foo: Promise.resolve(5),
 	bar: {
 		baz: Promise.resolve([ 1, 2, 3 ])
 	}
-}).then(log);
+});
 
+console.log(resolved);
 //-> { foo: 5, bar: { baz: [ 1, 2, 3 ] } }
 ```
 
@@ -38,17 +31,19 @@ We need to go _deeper_!
 Promise.object = require('@codefeathers/promise.object');
 const { log } = console;
 
-Promise.object(
+// --
+const resolved = await Promise.object(
 	Promise.resolve({
 		foo: Promise.resolve({
 			bar: Promise.resolve(5)
 		})
 	})
-).then(log);
+);
 
-//-> { foo: { bar: 5 } } 
+console.log(resolved);
+//-> { foo: { bar: 5 } }
 ```
 
 ## Credits
 
-The original idea and challenge was all [@TRGWII](https://github.com/TRGWII).
+The original idea and challenge was from [@TRGWII](https://github.com/TRGWII).
