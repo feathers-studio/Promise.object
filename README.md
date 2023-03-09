@@ -11,9 +11,8 @@ npm install --save @codefeathers/promise.object
 ## Usage
 
 ```TS
-import { promiseObject } from "@codefeathers/promise.object";
+import promiseObject from "@codefeathers/promise.object";
 
-// --
 const resolved = await Promise.object({
 	foo: Promise.resolve(5),
 	bar: {
@@ -28,10 +27,8 @@ console.log(resolved);
 We need to go _deeper_!
 
 ```JavaScript
-Promise.object = require('@codefeathers/promise.object');
-const { log } = console;
+import promiseObject from "@codefeathers/promise.object";
 
-// --
 const resolved = await Promise.object(
 	Promise.resolve({
 		foo: Promise.resolve({
@@ -42,6 +39,12 @@ const resolved = await Promise.object(
 
 console.log(resolved);
 //-> { foo: { bar: 5 } }
+```
+
+## Deno
+
+```TS
+import promiseObject from "https://deno.land/x/promise_object@v0.10.0";
 ```
 
 ## Credits
