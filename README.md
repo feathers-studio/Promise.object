@@ -13,7 +13,7 @@ npm install --save @codefeathers/promise.object
 ```TS
 import promiseObject from "@codefeathers/promise.object";
 
-const resolved = await Promise.object({
+const resolved = await promiseObject({
 	foo: Promise.resolve(5),
 	bar: {
 		baz: Promise.resolve([ 1, 2, 3 ])
@@ -29,7 +29,7 @@ We need to go _deeper_!
 ```JavaScript
 import promiseObject from "@codefeathers/promise.object";
 
-const resolved = await Promise.object(
+const resolved = await promiseObject(
 	Promise.resolve({
 		foo: Promise.resolve({
 			bar: Promise.resolve(5)
